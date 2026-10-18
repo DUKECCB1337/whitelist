@@ -4,5 +4,5 @@
   "_hash": "sha256",
   "_updated_at": "2026-10-18T05:05:37Z",
   "hwids": [],
-  "_note": "hwids 为空 = 所有客户端都被拒绝(fail-closed)。入库前 tools/validate_whitelist.py 会校验格式。"
+  "_note": "hwids 为空 = 所有客户端都被拒绝(fail-closed)。只存 sha256(hwid)；note 为 RSA 密文。"
 }
