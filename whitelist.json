@@ -2,12 +2,7 @@
   "_schema": 1,
   "_doc": "HWID whitelist. 只存 sha256(hwid) 十六进制小写，不存原始 HWID。客户端计算 sha256(本机hwid) 后在此列表中查找；找不到即退出。",
   "_hash": "sha256",
-  "_updated_at": "2026-10-18T04:07:08Z",
-  "hwids": [{
-    "note": "desktop-cli e2e",
-    "added": "2026-10-18",
-    "id": "daf726fb21f70149fc2cad8f6585c19d0197e95acfc3974f65ab3c913b6871c9",
-    "enabled": false
-  }],
+  "_updated_at": "2026-10-18T04:07:12Z",
+  "hwids": [],
   "_note": "hwids 为空 = 所有客户端都被拒绝(fail-closed)。入库前 tools/validate_whitelist.py 会校验格式。"
 }
