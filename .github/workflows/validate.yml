@@ -1,0 +1,70 @@
+name: validate-whitelist
+
+on:
+  push:
+    branches: [main]
+    paths: ["whitelist.json", ".github/workflows/validate.yml"]
+  pull_request:
+    paths: ["whitelist.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 校验 whitelist.json
+        run: |
+          python3 - <<'PY'
+          import json, re, sys
+
+          HEX = re.compile(r"^[0-9a-f]{64}$")
+          try:
+              doc = json.loads(open("whitelist.json", encoding="utf-8").read())
+          except Exception as e:
+              print("ERROR: 不是合法 JSON:", e)
+              sys.exit(1)
+          if not isinstance(doc, dict):
+              print("ERROR: 顶层必须是对象")
+              sys.exit(1)
+          arr = doc.get("hwids")
+          if not isinstance(arr, list):
+              print('ERROR: 缺少 "hwids" 数组（客户端会 fail-closed 全员被拒）')
+              sys.exit(1)
+
+          seen, errs = set(), []
+          for i, it in enumerate(arr):
+              if isinstance(it, str):
+                  hid, en = it, True
+              elif isinstance(it, dict):
+                  hid, en = it.get("id"), it.get("enabled", True)
+                  if not isinstance(en, bool):
+                      errs.append(f"#{i}: enabled 必须是布尔")
+              else:
+                  errs.append(f"#{i}: 只能是字符串或对象")
+                  continue
+              if not isinstance(hid, str) or not HEX.match(hid.strip().lower()):
+                  errs.append(f"#{i}: 不是 64 位 sha256: {hid!r}")
+                  continue
+              h = hid.strip().lower()
+              if h in seen:
+                  errs.append(f"#{i}: 重复 {h[:12]}")
+              seen.add(h)
+
+          exp = doc.get("_expires_at")
+          if exp is not None and not (isinstance(exp, str) and re.match(r"^\d{4}-\d{2}-\d{2}", exp)):
+              errs.append(f"_expires_at 格式非法: {exp!r}")
+
+          for e in errs:
+              print("ERROR:", e)
+          if errs:
+              sys.exit(1)
+
+          print(f"OK  {len(seen)} 条")
+          if not seen:
+              print("WARN: 名单为空 —— 当前所有客户端都会被拒绝")
+          PY
