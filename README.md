@@ -18,7 +18,7 @@ HWID 白名单库。客户端用**只读细粒度 PAT** 读取本库的 `whiteli
   "_hash": "sha256",
   "hwids": [
     "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    { "id": "<sha256hex>", "note": "谁在用", "added": "2026-10-18", "enabled": true }
+    { "id": "<sha256hex>", "note": "rsa:<base64密文>", "added": "2026-10-18", "enabled": true }
   ]
 }
 ```
