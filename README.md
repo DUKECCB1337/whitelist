@@ -43,6 +43,14 @@ curl -sS -H "Authorization: Bearer $WL_TOKEN" \
 
 `raw.githubusercontent.com` 在国内/某些网络下可能不可达，客户端应做双通道回退（raw → api）。
 
+## GitHub 侧已配置
+
+- 仓库：私有，`main` 为默认分支
+- Issues / Wiki / Projects 关闭（减少可写面），merge commit / rebase merge 关闭，合并自动删分支
+- 入库闸门：`.github/workflows/validate-whitelist.yml` 在 `whitelist.json` 变更时跑
+  `tools/validate_whitelist.py`，格式非法直接红叉（坏 JSON 会让 fail-closed 客户端全军覆没）
+- 未启用：rulesets / 分支保护 —— 个人 free plan 的私有库不支持（API 返回 `Upgrade to GitHub Pro`）
+
 ## 维护
 
 用管理员 token（**不要**发到客户端）改 `whitelist.json` 后 push，或跑本地工具：
