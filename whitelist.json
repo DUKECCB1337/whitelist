@@ -1,8 +1,1 @@
-{
-  "_schema": 1,
-  "_doc": "HWID whitelist. 只存 sha256(hwid) 十六进制小写，不存原始 HWID。客户端计算 sha256(本机hwid) 后在此列表中查找；找不到即退出。",
-  "_hash": "sha256",
-  "_updated_at": "2026-10-18T05:05:37Z",
-  "hwids": [],
-  "_note": "hwids 为空 = 所有客户端都被拒绝(fail-closed)。只存 sha256(hwid)；note 为 RSA 密文。"
-}
+{"hwids":[,}
