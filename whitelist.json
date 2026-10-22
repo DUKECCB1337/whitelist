@@ -11,5 +11,6 @@
                       "added":  "2026-10-22"
                   }
               ],
-    "_note":  "hwids 为空 = 所有客户端都被拒绝(fail-closed)。只存 sha256(hwid)；note 为 RSA 密文。"
+    "_note":  "hwids 为空 = 所有客户端都被拒绝(fail-closed)。只存 sha256(hwid)；note 为 RSA 密文。",
+    "_sig":  "CrXQYZ5y3IHizpw6LGro/5uaX0+P50DHiQStbu003JfWfO6MmGHZNlO5xHCOocAotil//ilvTFM5dCGPPUJYABh7oDkCT8XoLnK9sXGdslcqmg+NH9ttg7pU0IYbCICwvp5hvs1/yvUb6ndiJqaSmXglgS59PSdXEbpOdxzsFxFI1NHuMShS9vaeVD1q3iCrZbypw+wLAVIH+ag7NvQqe5J1F702TirzZ3cXO3f/QtawYr6W9dQcMVk2blTBomoJgmhjKHA7MLN9pJrWuHiyiEbBgfWxt37V3NewCuhByAHaCZiszUhU9/3OJCcSc5nqalRTC91poSmZc0XMaLt7zw=="
 }
