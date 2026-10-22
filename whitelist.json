@@ -2,10 +2,10 @@
   "_schema": 1,
   "_doc": "HWID whitelist. 只存 sha256(hwid) 十六进制小写，不存原始 HWID。客户端计算 sha256(本机hwid) 后在此列表中查找；找不到即退出。",
   "_hash": "sha256",
-  "_updated_at": "2026-10-22T14:28:47Z",
+  "_updated_at": "2026-10-22T14:35:02Z",
   "hwids": [
     {
-      "note": "rsa:Qwbqk258MgKQ6uC5NuTDtLg7ujVXv60iwfpJ9AjmQ9Rq+5SEb8PKGNPXvdRS58GeZUNXQ5hZHREP8Clv8Ix7u4h1bngiqxb1gP/VV8KkazV9vrPNlDbGT/pW8mtPWs1MqaY9YRvxMGCBVurzZedAyvUb4/h3z6PIAjA00ukiEAKXZhEc9j0QuLTKf0UxrJudXKQb8B71mhKbEt1QDDn+AkHQyw7fEEaYcTWtZb1fMNGpedQZUTIE/pCghQjP6HQ6cYb2WHjDm3vw8967QuGnLQsxB8fmOXwNofmRJD35HeYwRK0Mb5tix7FEqDnE8A9oHDh/T9CwHV+/PazkYNW0WQ==",
+      "note": "rsa:Qwbqk258MgKQ6uC5NuTDtLg7ujVXv60iwfpJ9AjmQ9Rq+5SEb8PKGNPXvdRS58GeZUNXQ5hZHREP8Clv8Ix7u4h1bngiqxb1gP\/VV8KkazV9vrPNlDbGT\/pW8mtPWs1MqaY9YRvxMGCBVurzZedAyvUb4\/h3z6PIAjA00ukiEAKXZhEc9j0QuLTKf0UxrJudXKQb8B71mhKbEt1QDDn+AkHQyw7fEEaYcTWtZb1fMNGpedQZUTIE\/pCghQjP6HQ6cYb2WHjDm3vw8967QuGnLQsxB8fmOXwNofmRJD35HeYwRK0Mb5tix7FEqDnE8A9oHDh\/T9CwHV+\/PazkYNW0WQ==",
       "added": "2026-10-22",
       "id": "3c719f8b201286c75f9ba01f19bee6f01143fcb75a3a37a0105c8501c8df831e",
       "enabled": true
@@ -17,12 +17,18 @@
       "enabled": true
     },
     {
-      "note": "rsa:vfb5BVnxlGjkzJeR7/O63SjLoDeRDjPLP6VDwZWHeX/tC6Js9RtKbAD56FaHgMOaETfGV1KIIkVivw40nCxkFUjIyZJO6psXj03eB6LHp1filfMi4TC8bcHLVbeONXqux8z00Tsq5wveZUPtJZGhWhA9+ua7yopk5k6Ru+GY4J3kQ04Yz6KkukNXczOpbQS0yVQN/i8QHR55HBtLl8PdPF98qq1gyr4ugvGtRQZ81CblLQtYZc2v8zJIvn+dS9qZoTvzHVgooE85kGe8OxnnkimCiRqdPZrB46g4o7uqNLgPCM0aoka7oLvWc85hclYabTjhmP67HKfoPve1BcsHyA==",
+      "note": "rsa:vfb5BVnxlGjkzJeR7\/O63SjLoDeRDjPLP6VDwZWHeX\/tC6Js9RtKbAD56FaHgMOaETfGV1KIIkVivw40nCxkFUjIyZJO6psXj03eB6LHp1filfMi4TC8bcHLVbeONXqux8z00Tsq5wveZUPtJZGhWhA9+ua7yopk5k6Ru+GY4J3kQ04Yz6KkukNXczOpbQS0yVQN\/i8QHR55HBtLl8PdPF98qq1gyr4ugvGtRQZ81CblLQtYZc2v8zJIvn+dS9qZoTvzHVgooE85kGe8OxnnkimCiRqdPZrB46g4o7uqNLgPCM0aoka7oLvWc85hclYabTjhmP67HKfoPve1BcsHyA==",
       "added": "2026-10-22",
       "id": "8d7de1ef2f837abbef2325e37912ab674f02dba0572a28878a3f1f55cce9a5cb",
       "enabled": true
+    },
+    {
+      "id": "beef8562a27c0148edb4ecad6e04287b360e733a1af686705e0c7c92c81a967e",
+      "enabled": true,
+      "added": "2026-10-22",
+      "note": "rsa:xBWyOV7aeM5JQqakYZYEdzirQDCLDW8PI+ZioY8RuZQgv\/oBYJm6ehrV\/5FvRjnqWXlgC+WwbVYveAX9nBi53Oe3XLcH\/njSNfiS3IzA38GGIt\/qE5SLDid+D6g1L8xic2RCCH6Rmhl\/apSFhLqZtFIUnzRKazC1XOwI2ZMmznsy\/JhF9anNtvJQLliqbAS9HmaRexeFZwStrCCGC\/NQBua3wpn1HYnZLsxjCk6tRKtqVCqGatyE+qrz9n8cNAPODy9QZzEvdXuSHyTWEzUxs3HOI\/50QiZ801aiIn916XNBvRCfnry2WOIsfTq+GXMIIiBo1J8kYrgCqd6qsKS7hQ=="
     }
   ],
-  "_sig": "XufEpjzTDNdzfWZg3yvOm2rHT737dd7zvYC15SqjIW0JoTma2pjhaHUnbjYEN8NOUBNkStV5op9IEsWMhP/m8l60YU2yuQnj9M6uoAGKCGko9tZTx6+ULXmw/nfyh8Jm9cBDCZayJBDoZLsbprI0C0j8YUW16jvWKRle25EehEZlf0d9ppPj9/wxkUbjudFW+NuLAdNhODgzHy9lvmuEVrxDeqT0atgDL8eIrb+JiQXCcCCxNuZULTwWsnN5fG/A/5cpr8y369QZJJVZFnR3iI9wMAbeDJkO3CFcWL2XYCB3/hubqIB/QkSePjiBD729uX410aa6thnOStVOawY8xA==",
+  "_sig": "XufEpjzTDNdzfWZg3yvOm2rHT737dd7zvYC15SqjIW0JoTma2pjhaHUnbjYEN8NOUBNkStV5op9IEsWMhP\/m8l60YU2yuQnj9M6uoAGKCGko9tZTx6+ULXmw\/nfyh8Jm9cBDCZayJBDoZLsbprI0C0j8YUW16jvWKRle25EehEZlf0d9ppPj9\/wxkUbjudFW+NuLAdNhODgzHy9lvmuEVrxDeqT0atgDL8eIrb+JiQXCcCCxNuZULTwWsnN5fG\/A\/5cpr8y369QZJJVZFnR3iI9wMAbeDJkO3CFcWL2XYCB3\/hubqIB\/QkSePjiBD729uX410aa6thnOStVOawY8xA==",
   "_note": "hwids 为空 = 所有客户端都被拒绝(fail-closed)。只存 sha256(hwid)；note 为 RSA 密文。"
 }
