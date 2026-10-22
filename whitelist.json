@@ -1,14 +1,16 @@
 {
-  "_schema": 1,
-  "_doc": "HWID whitelist. 只存 sha256(hwid) 十六进制小写，不存原始 HWID。客户端计算 sha256(本机hwid) 后在此列表中查找；找不到即退出。",
-  "_hash": "sha256",
-  "_updated_at": "2026-10-22T13:26:03Z",
-  "hwids": [{
-    "note": "rsa:Qwbqk258MgKQ6uC5NuTDtLg7ujVXv60iwfpJ9AjmQ9Rq+5SEb8PKGNPXvdRS58GeZUNXQ5hZHREP8Clv8Ix7u4h1bngiqxb1gP/VV8KkazV9vrPNlDbGT/pW8mtPWs1MqaY9YRvxMGCBVurzZedAyvUb4/h3z6PIAjA00ukiEAKXZhEc9j0QuLTKf0UxrJudXKQb8B71mhKbEt1QDDn+AkHQyw7fEEaYcTWtZb1fMNGpedQZUTIE/pCghQjP6HQ6cYb2WHjDm3vw8967QuGnLQsxB8fmOXwNofmRJD35HeYwRK0Mb5tix7FEqDnE8A9oHDh/T9CwHV+/PazkYNW0WQ==",
-    "added": "2026-10-22",
-    "id": "3c719f8b201286c75f9ba01f19bee6f01143fcb75a3a37a0105c8501c8df831e",
-    "enabled": true
-  }],
-  "_sig": "CrXQYZ5y3IHizpw6LGro/5uaX0+P50DHiQStbu003JfWfO6MmGHZNlO5xHCOocAotil//ilvTFM5dCGPPUJYABh7oDkCT8XoLnK9sXGdslcqmg+NH9ttg7pU0IYbCICwvp5hvs1/yvUb6ndiJqaSmXglgS59PSdXEbpOdxzsFxFI1NHuMShS9vaeVD1q3iCrZbypw+wLAVIH+ag7NvQqe5J1F702TirzZ3cXO3f/QtawYr6W9dQcMVk2blTBomoJgmhjKHA7MLN9pJrWuHiyiEbBgfWxt37V3NewCuhByAHaCZiszUhU9/3OJCcSc5nqalRTC91poSmZc0XMaLt7zw==",
-  "_note": "hwids 为空 = 所有客户端都被拒绝(fail-closed)。只存 sha256(hwid)；note 为 RSA 密文。"
+    "_schema":  1,
+    "_doc":  "HWID whitelist. 只存 sha256(hwid) 十六进制小写，不存原始 HWID。客户端计算 sha256(本机hwid) 后在此列表中查找；找不到即退出。",
+    "_hash":  "sha256",
+    "_updated_at":  "2026-10-22T13:26:03Z",
+    "hwids":  [
+                  {
+                      "note":  "rsa:Qwbqk258MgKQ6uC5NuTDtLg7ujVXv60iwfpJ9AjmQ9Rq+5SEb8PKGNPXvdRS58GeZUNXQ5hZHREP8Clv8Ix7u4h1bngiqxb1gP/VV8KkazV9vrPNlDbGT/pW8mtPWs1MqaY9YRvxMGCBVurzZedAyvUb4/h3z6PIAjA00ukiEAKXZhEc9j0QuLTKf0UxrJudXKQb8B71mhKbEt1QDDn+AkHQyw7fEEaYcTWtZb1fMNGpedQZUTIE/pCghQjP6HQ6cYb2WHjDm3vw8967QuGnLQsxB8fmOXwNofmRJD35HeYwRK0Mb5tix7FEqDnE8A9oHDh/T9CwHV+/PazkYNW0WQ==",
+                      "added":  "2026-10-22",
+                      "id":  "3c719f8b201286c75f9ba01f19bee6f01143fcb75a3a37a0105c8501c8df831e",
+                      "enabled":  true
+                  }
+              ],
+    "_sig":  "j+V9imnAXc5dG5jJXe8GPJDQlcbZqNlOpnx0HyzsyIjFWWinz2EatMh/ddlkxKdqe5U47zdRLGI8UzRTrhJZAagDVt+NhtO5p0fdEtaVwPgLC4DoJ/50oLycg9Wx7LqPNJs1guEX+GIUNB6Xe7Ugb1OuC+Inzu2biKg3U6epCMr7rpFiUTxb6s0xIdWVHAygesAVDkIF+lkRJP8xpYw888rF7SPKvSLJpMH2pXAOlHCJS0QYObqWb3a9sGxoLdXy/bwcXpdLX3joHkxtc2lkqSsCtWuW3McoYZH3XdC2GQlngXPDZpW59oPyHwDMvVw/wm47l4UPYm7Kwy1LGyupNQ==",
+    "_note":  "hwids 为空 = 所有客户端都被拒绝(fail-closed)。只存 sha256(hwid)；note 为 RSA 密文。"
 }
