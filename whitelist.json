@@ -2,7 +2,7 @@
   "_schema": 1,
   "_doc": "HWID whitelist. 只存 sha256(hwid) 十六进制小写，不存原始 HWID。客户端计算 sha256(本机hwid) 后在此列表中查找；找不到即退出。",
   "_hash": "sha256",
-  "_updated_at": "2026-10-22T14:35:02Z",
+  "_updated_at": "2026-10-22T14:39:05Z",
   "hwids": [
     {
       "note": "rsa:Qwbqk258MgKQ6uC5NuTDtLg7ujVXv60iwfpJ9AjmQ9Rq+5SEb8PKGNPXvdRS58GeZUNXQ5hZHREP8Clv8Ix7u4h1bngiqxb1gP\/VV8KkazV9vrPNlDbGT\/pW8mtPWs1MqaY9YRvxMGCBVurzZedAyvUb4\/h3z6PIAjA00ukiEAKXZhEc9j0QuLTKf0UxrJudXKQb8B71mhKbEt1QDDn+AkHQyw7fEEaYcTWtZb1fMNGpedQZUTIE\/pCghQjP6HQ6cYb2WHjDm3vw8967QuGnLQsxB8fmOXwNofmRJD35HeYwRK0Mb5tix7FEqDnE8A9oHDh\/T9CwHV+\/PazkYNW0WQ==",
@@ -24,7 +24,7 @@
     },
     {
       "id": "beef8562a27c0148edb4ecad6e04287b360e733a1af686705e0c7c92c81a967e",
-      "enabled": true,
+      "enabled": false,
       "added": "2026-10-22",
       "note": "rsa:xBWyOV7aeM5JQqakYZYEdzirQDCLDW8PI+ZioY8RuZQgv\/oBYJm6ehrV\/5FvRjnqWXlgC+WwbVYveAX9nBi53Oe3XLcH\/njSNfiS3IzA38GGIt\/qE5SLDid+D6g1L8xic2RCCH6Rmhl\/apSFhLqZtFIUnzRKazC1XOwI2ZMmznsy\/JhF9anNtvJQLliqbAS9HmaRexeFZwStrCCGC\/NQBua3wpn1HYnZLsxjCk6tRKtqVCqGatyE+qrz9n8cNAPODy9QZzEvdXuSHyTWEzUxs3HOI\/50QiZ801aiIn916XNBvRCfnry2WOIsfTq+GXMIIiBo1J8kYrgCqd6qsKS7hQ=="
     }
